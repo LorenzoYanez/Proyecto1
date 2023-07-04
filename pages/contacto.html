@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <title>Contactanos</title>
+</head>
+<body>
+    <div class="head">
+        <a href="/index.html" class="logo"><span>My</span>Proyect</a>
+
+        <h1>Suscribite! Forma parte de Nosotros</h1>
+    <p>Por favor completa con tus datos</p>
+    <form method="post" action='#'>
+        
+      <fieldset>
+        <label for="first-name">Nombre/s: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Apellido: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Tu Email: <input id="email" name="email" type="email" placeholder="myproyect@gmail.com" required /></label>
+        <label for="new-password">Crea tu Contraseña: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="profile-picture">Subi una foto tuya: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Tu edad: <input id="age" type="number" name="age" min="13" max="120" /></label>
+        
+        <label for="bio">Algo que nos quieras contar sobre vos:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Me considero una persona..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Guardar" />
+    </form>
+        
+</body>
+
+</html>
